@@ -41,7 +41,7 @@ nc.df5 <- subset(nc.df4, superior limit>x & x> inferior limit) #limits to the de
 
 # final 
 
-nc.final <- nc.df5 #if you don't limit your data use the nc.df3
+nc.final <- nc.df5  #if you don't limit your data use the nc.df3
 
 # data test
 
@@ -57,4 +57,4 @@ hist(nc.final$variable_desired, na.rm=T)
 
 # transform in csv
 
-write.csv(nc.final, file= "C:/place/name.csv)
+write.csv(nc.final, file= "C:/place/name.csv)"
