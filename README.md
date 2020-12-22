@@ -10,15 +10,19 @@ library(xlsx)
 
 
 #clean your Environment
+
 rm(list=ls())
 
 #Select the .nc file
+
 nc.brick <- brick(file.choose())
 
 #creating a first data frame 
+
 nc.df <- as.data.frame(nc.brick[[1]], xy=T)
 
 #excluding Null data
+
 nc.df2 <- na.omit(nc.df)
 
 #select the variables that you are gonna use 
@@ -35,6 +39,7 @@ nc.df5 <- subset(nc.df4, superior limit>x & x> inferior limit) #limits to the de
 nc.final <- nc.df5 #if you don't limit your data use the nc.df3
 
 #data test
+
 max(nc.final$variable_desired, na.rm=T)
 min(nc.final$variable_desired, na.rm=T)
 mean(nc.final$variable_desired, na.rm=T)
