@@ -1,6 +1,6 @@
 ---
 title: "Nc file in CSV using R"
-author: "Costa LM"
+author: "Costa LM & Panosso AR"
 date: "25/02/2021"
 output: html_document
 ---
